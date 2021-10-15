@@ -1,0 +1,12 @@
+C:\SoccerManager\SoccerManager.App\SoccerManager.App.Persistencia\bin\Debug\netstandard2.1\SoccerManager.App.Persistencia.deps.json
+C:\SoccerManager\SoccerManager.App\SoccerManager.App.Persistencia\bin\Debug\netstandard2.1\SoccerManager.App.Persistencia.dll
+C:\SoccerManager\SoccerManager.App\SoccerManager.App.Persistencia\bin\Debug\netstandard2.1\SoccerManager.App.Persistencia.pdb
+C:\SoccerManager\SoccerManager.App\SoccerManager.App.Persistencia\obj\Debug\netstandard2.1\SoccerManager.App.Persistencia.csprojAssemblyReference.cache
+C:\SoccerManager\SoccerManager.App\SoccerManager.App.Persistencia\obj\Debug\netstandard2.1\SoccerManager.App.Persistencia.AssemblyInfoInputs.cache
+C:\SoccerManager\SoccerManager.App\SoccerManager.App.Persistencia\obj\Debug\netstandard2.1\SoccerManager.App.Persistencia.AssemblyInfo.cs
+C:\SoccerManager\SoccerManager.App\SoccerManager.App.Persistencia\obj\Debug\netstandard2.1\SoccerManager.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\SoccerManager\SoccerManager.App\SoccerManager.App.Persistencia\obj\Debug\netstandard2.1\SoccerManager.App.Persistencia.dll
+C:\SoccerManager\SoccerManager.App\SoccerManager.App.Persistencia\obj\Debug\netstandard2.1\SoccerManager.App.Persistencia.pdb
+C:\SoccerManager\SoccerManager.App\SoccerManager.App.Persistencia\bin\Debug\netstandard2.1\SoccerManager.App.Dominio.dll
+C:\SoccerManager\SoccerManager.App\SoccerManager.App.Persistencia\bin\Debug\netstandard2.1\SoccerManager.App.Dominio.pdb
+C:\SoccerManager\SoccerManager.App\SoccerManager.App.Persistencia\obj\Debug\netstandard2.1\SoccerManager.App.Persistencia.csproj.CopyComplete
