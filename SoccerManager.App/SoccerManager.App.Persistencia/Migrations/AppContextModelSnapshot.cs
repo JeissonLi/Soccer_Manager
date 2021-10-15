@@ -52,7 +52,7 @@ namespace SoccerManager.App.Persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Ciudad");
+                    b.ToTable("Ciudades");
                 });
 
             modelBuilder.Entity("SoccerManager.App.Dominio.Genero", b =>
@@ -70,7 +70,7 @@ namespace SoccerManager.App.Persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Genero");
+                    b.ToTable("Generos");
                 });
 
             modelBuilder.Entity("SoccerManager.App.Dominio.Perfil", b =>
@@ -85,7 +85,7 @@ namespace SoccerManager.App.Persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Perfil");
+                    b.ToTable("Perfiles");
                 });
 
             modelBuilder.Entity("SoccerManager.App.Dominio.Persona", b =>
@@ -153,7 +153,7 @@ namespace SoccerManager.App.Persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tipo_Documento");
+                    b.ToTable("Tipos_Documentos");
                 });
 
             modelBuilder.Entity("SoccerManager.App.Dominio.Persona", b =>
