@@ -315,6 +315,155 @@ namespace SoccerManager.App.Persistencia
             _appContext.SaveChanges();
         }
 
+//===============================================================================================
+        //CRUD Rama
+        Rama IRepositorios.AddRama(Rama rama)
+        {
+            try
+            {
+                var RamaAdicionado = _appContext.Ramas.Add(rama);  //INSERT en la BD
+                _appContext.SaveChanges();
+                return RamaAdicionado.Entity;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        IEnumerable<Rama> IRepositorios.GetAllRamas()
+        {
+            return _appContext.Ramas;
+        }
+
+        Rama IRepositorios.GetRama(int? IdRama)
+        {
+            return _appContext.Ramas.FirstOrDefault(p => p.Id == IdRama);
+        }
+
+        Rama IRepositorios.UpdateRama(Rama rama)
+        {
+            var RamaEncontrado = _appContext.Ramas.FirstOrDefault(p => p.Id == rama.Id);
+            if (RamaEncontrado != null)
+            {
+                
+                RamaEncontrado.Nombre = rama.Nombre;
+                
+                
+
+                _appContext.SaveChanges();
+            }
+            return RamaEncontrado;
+        }
+
+        void IRepositorios.DeleteRama(int IdRama)
+        {
+            var RamaEncontrado = _appContext.Ramas.FirstOrDefault(p => p.Id == IdRama);
+            if (RamaEncontrado == null)
+                return;
+            _appContext.Ramas.Remove(RamaEncontrado);
+            _appContext.SaveChanges();
+        }
+//===============================================================================================
+        //CRUD Modalidad
+        Modalidad IRepositorios.AddModalidad(Modalidad modalidad)
+        {
+            try
+            {
+                var ModalidadAdicionado = _appContext.Modalidades.Add(modalidad);  //INSERT en la BD
+                _appContext.SaveChanges();
+                return ModalidadAdicionado.Entity;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        IEnumerable<Modalidad> IRepositorios.GetAllModalidades()
+        {
+            return _appContext.Modalidades;
+        }
+
+        Modalidad IRepositorios.GetModalidad(int? IdModalidad)
+        {
+            return _appContext.Modalidades.FirstOrDefault(p => p.Id == IdModalidad);
+        }
+
+        Modalidad IRepositorios.UpdateModalidad(Modalidad modalidad)
+        {
+            var ModalidadEncontrado = _appContext.Modalidades.FirstOrDefault(p => p.Id == modalidad.Id);
+            if (ModalidadEncontrado != null)
+            {
+                
+                ModalidadEncontrado.Nombre = modalidad.Nombre;
+                
+                
+
+                _appContext.SaveChanges();
+            }
+            return ModalidadEncontrado;
+        }
+
+        void IRepositorios.DeleteModalidad(int IdModalidad)
+        {
+            var ModalidadEncontrado = _appContext.Modalidades.FirstOrDefault(p => p.Id == IdModalidad);
+            if (ModalidadEncontrado == null)
+                return;
+            _appContext.Modalidades.Remove(ModalidadEncontrado);
+            _appContext.SaveChanges();
+        }
+
+//===============================================================================================
+        //CRUD Categoria
+        Categoria IRepositorios.AddCategoria(Categoria categoria)
+        {
+            try
+            {
+                var CategoriaAdicionado = _appContext.Categorias.Add(categoria);  //INSERT en la BD
+                _appContext.SaveChanges();
+                return CategoriaAdicionado.Entity;
+            }
+            catch
+            {
+                throw;
+            }
+        }
+
+        IEnumerable<Categoria> IRepositorios.GetAllCategorias()
+        {
+            return _appContext.Categorias;
+        }
+
+        Categoria IRepositorios.GetCategoria(int? IdCategoria)
+        {
+            return _appContext.Categorias.FirstOrDefault(p => p.Id == IdCategoria);
+        }
+
+        Categoria IRepositorios.UpdateCategoria(Categoria categoria)
+        {
+            var CategoriaEncontrado = _appContext.Categorias.FirstOrDefault(p => p.Id == categoria.Id);
+            if (CategoriaEncontrado != null)
+            {
+                
+                CategoriaEncontrado.Nombre = categoria.Nombre;
+                
+                
+
+                _appContext.SaveChanges();
+            }
+            return CategoriaEncontrado;
+        }
+
+        void IRepositorios.DeleteCategoria(int IdCategoria)
+        {
+            var CategoriaEncontrado = _appContext.Categorias.FirstOrDefault(p => p.Id == IdCategoria);
+            if (CategoriaEncontrado == null)
+                return;
+            _appContext.Categorias.Remove(CategoriaEncontrado);
+            _appContext.SaveChanges();
+        }
+
 
     }
 }
